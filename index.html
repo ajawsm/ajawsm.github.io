@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style >
+   :root {
+       --blue: rgb(0, 37, 150);
+   }
+body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background: url(images/2019-Snowflake-Bkgd.jpeg);
+    background-size: cover;
+}
+h1 {
+    font-family: 'Rockwell', cursive;
+    font-size: 2em;
+    color: rgb(0, 37, 150);
+    text-shadow: 0.5px 0.5px #808080;
+    
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: 60%;
+    max-height: 80%;
+    max-width: 800px;
+    min-width: 300px;
+    align-items: center;
+    background: white;
+}
+.responsive {
+    width: 100%;
+    height: auto;
+}
+.logo {
+    display: inline-block;
+    width: 20%;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+}
+.greeting {
+    display: inline-block;
+    width: 70%;
+    margin: 3px;
+    padding: 3px;
+}
+.intro {
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    display: inline-block;
+}
+.footer {
+    display: flex;
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.social {
+    display: inline-block;
+    width: 8%;
+    padding: 3%;
+}
+.brookville {
+    display: inline-block;
+    position: relative;
+    width: 30%;
+    padding: 2%;
+    align-items: center;
+}
+p {
+    font-family: Arial, helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    color: rgb(0, 37, 150);
+    line-height: 130%;
+    text-shadow: 0.25px 0.25px #808080;
+}
+.img-control {
+    display: flex;
+    position: relative;
+    width: 50%;
+    height: auto;
+    margin: 0;
+    align-items: center;
+}
+.img-control-wide {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    align-items: center;
+}
+.text-overlay  {
+    max-width: 100%;
+    max-height: 100%;
+   background: rgba(0, 37, 150, 0.6);
+   opacity: 0;
+   display: flex;
+   flex-wrap: wrap;
+   position: absolute;
+   margin: auto;
+   padding: 3%;
+   text-align: center;
+   align-self: center;
+   font-family: 'Arial Bold', Helvetica, sans-serif;
+   font-size: 1.75vw;
+   color: white;
+   text-shadow: 1px 1px #000;
+}
+
+
+.credit {
+    text-align: center;
+    align-self: center;
+    margin: auto;
+    font-family: 'Arial Bold', Helvetica, sans-serif;
+    color: white;
+    text-shadow: none;
+    font-weight: normal;
+}
+    
+    @media screen and (-ms-high-contrast:active), (-ms-high-contrast:none) {
+    .text-overlay {
+        transform: translate(-100%, -50%);
+        width: 95%;
+    }
+}
+.text-overlay:focus {
+    opacity: 1;
+    
+}
+    
+.text-overlay:hover {
+    opacity: 1;
+    
+}
+    
+ .text-overlay:active {
+     opacity: 1;
+    }
+@media only screen and (max-width: 900px) {
+    
+    .img-control {
+        width: 100%;
+    }
+    .text-overlay {
+        font-size: 2.5vw;
+    }
+    .logo {
+    width: 100%;
+    }
+    .greeting {
+    width: 100%;
+    text-align: center;
+}
+.brookville {
+    display: inline-block;
+    position: relative;
+    width: 60%;
+    align-items: center;
+}
+}
+@media only screen and (max-width: 650px) {
+    .text-overlay {
+        font-size: 3.5vw;
+    }
+ .social {
+    display: inline-block;
+    width: 100%;
+    padding: 3%;
+    
+}
+}
+@media only screen and (min-width: 1200px) {
+    .text-overlay {
+        font-size: 24px;
+    }
+}
+    </style>
+</head>
+
+<body>
+
+
+<div class="container">
+        <div class="logo"> <img src="images/Brookville-Santa-Logo.png" alt="BROOKVILLE" class="responsive"/> </div>
+        <div class="greeting"><h1>Season's Greetings from BROOKVILLE!</h1> </div>
+        <div class="intro"><p>
+            In 2019, BROOKVILLE progressed major transit and locomotive projects, continued deliveries for rebuild and new equipment 
+            programs in our mining division, and served customers in new ways with maintenance services for Liberty Streetcar fleets. Thank you for 
+            giving us the opportunity to serve you this year. We hope that you and yours have a holiday season filled with joy and happiness, and we 
+            look forward to working together in 2020. 
+            <br />
+            <br />
+            For more on BROOKVILLE's big year in 2019, please hover over or tap the photos below!
+        </p></div>
+    <div class="img-control-wide">
+    <img src="images/1058.jpg" alt="San Francisco Municipal Transportation Agency Streetcar Car No. 1058" class="responsive" ontouchstart="" />
+    <div class="text-overlay">BROOKVILLE shipped three PCC Streetcars to SFMTA in San Francisco as part of a 16 car overhaul program. 
+    </div>
+</div>
+
+    
+    <div class="img-control">
+    <img src="images/1057.jpg" alt="SFMTA Car No. 1057" class="responsive" ontouchstart="" />
+    <div class="text-overlay">This streetcar, SFMTA Car No. 1057, and Car No. 1058 (above) are single-enders, with operator controls at one end - great for operation on a rail loop.
+    </div>
+    </div>
+    <div class="img-control">
+    <img src="images/1015.JPG" alt="SFMTA Car No. 1015" class="responsive" ontouchstart="" />
+    <div class="text-overlay">SFMTA Car No. 1015 is a double-ender, with operator controls at both ends, ideal for rail lines. All three of the vehicles shipped this year were
+            originally manufactured in the 1940s.
+    
+    </div>
+    </div>
+    <div class="img-control">
+    <img src="images/PA-Trolley-GroupPhoto.jpg" alt="BROOKVILLE at PA Trolley Museum" class="responsive" ontouchstart="" />
+    <div class="text-overlay">BROOKVILLE joined PA Trolley Museum in Washington, Pa. to celebrate the completion of the restoration of West Penn Railways
+        Car No. 832. BROOKVILLE's contributions include carbody and truck restoration, refinishing, and replacing wiring and piping. 
+    </div>
+    </div>
+    <div class="img-control">
+    <img src="images/Mining.JPG" alt="Mining Locomotive" class="responsive" ontouchstart=""/>
+    <div class="text-overlay">BROOKVILLE continued to deliver new and rebuilt mining locomotives, personnel carriers, and specialty equipment 
+        for its customers in 2019.
+    </div>
+    </div>
+    <div class="img-control">
+    <img src="images/Decade-Awards.JPG" alt="BROOKVILLE Decade Awards" class="responsive" ontouchstart="" />
+    <div class="text-overlay">In April, BROOKVILLE honored team members celebrating major 10-year and 20-year service milestones with a luncheon and awards ceremony.
+    </div>
+    </div>
+    <div class="img-control">
+    <img src="images/NRHS-MKE.JPG" alt="Stillwater Locomotive" class="responsive" ontouchstart="" />
+    <div class="text-overlay">In November, BROOKVILLE's Alisha Adaway, Transdev's Terry Mulachy, and Milwaukee Alderman Robert Bauman spoke to the NRHS Wisconsin Chapter about The Hop Streetcar. <br />
+        <p class="credit">Photo By Dan Grudzielanek</p>
+    </div>
+    </div>
+
+    <div class="footer"><h1 style="text-align: center;">Happy Holidays!</h1></div>
+    <div class="footer">
+        
+        <div class="social "><a href="http://www.facebook.com/BrookvilleEquipmentCorp/" target="new"><img src="images/facebook.png" alt="facebook" class="responsive" /></a></div>
+        <div class="social"><a href="http://www.linkedin.com/company/brookville-equipment-corporation" target="new"><img src="images/linkedin.png" alt="linkedin" class="responsive" /></a></div>
+        <div class="social"><a href="http://twitter.com/brookvillecorp" target="new"><img src="images/twitter.png" alt="twitter" class="responsive" /></a></div>
+        <div class="social"><a href="http://www.youtube.com/user/BROOKVILLEcorp" target="new"><img src="images/youtube.png" alt="youtube" class="responsive" /></a></div>
+        
+    </div>
+    <div class="footer"><div class="brookville"><a href="http://www.brookvillecorp.com/" target="new"><img src="images/Brookville-Logo.png" alt="Brookville" class="responsive" /></a></div></div>
+</div>
+
+</body>
+</html>
